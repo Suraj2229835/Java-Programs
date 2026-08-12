@@ -1,0 +1,23 @@
+Create 2 strings variables first name & last name and concatenate the complete name :
+
+import java.util.Scanner;
+public class FullName {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner (System.in);
+
+        System.out.print("Enter first name.:");
+        String first_name = sc.next();
+
+        System.out.print("Enter last name.:");
+        String last_name = sc.next();
+
+        String full_Name = first_name + " " + last_name;
+
+        System.out.println("Full Name:"+full_Name);
+    }
+}
+
+Output:
+Enter first name: Suraj
+Enter last name: Sonawane
+Full name : Suraj Sonawane
