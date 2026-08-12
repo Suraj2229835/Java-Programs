@@ -1,0 +1,24 @@
+2. Given two nos as strings, convert them into integers using wrapper class and print their sum :
+
+import java.util.Scanner;
+public class SumOfStrings {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print ("Enter first no: ");
+        String s1 = sc.nextLine();
+        System.out.print ("Enter second no: ");
+        String s2 = sc.nextLine();
+
+        Integer n1 = Integer.valueOf(s1);
+        Integer n2 = Integer.valueOf(s2);
+
+        int sum = n1 + n2;
+        System.out.println ("Sum: " + sum);
+        sc.close();
+    }
+}
+
+Output:
+Enter first no = 15
+Enter second no = 20
+Sum : 35
