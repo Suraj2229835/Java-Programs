@@ -1,0 +1,21 @@
+6. Primitive to Obj & Obj to primitive :
+
+class wrapperDemo {
+    public static void main (String[] args) {
+        int num = 100;
+        Integer object = num; // Autoboxing
+        Integer number = Integer.valueOf(200);
+        int value = number; // Unboxing
+
+        System.out.println("Primitive value: " + num);
+        System.out.println("Wrapper Object: " + object);
+        System.out.println("Wrapper Object: " + number);
+        System.out.println("Primitive value: " + value);
+    }
+}
+
+Output:
+Primitive value: 100
+Wrapper Object: 100
+Wrapper Object: 200
+Primitive value: 200
