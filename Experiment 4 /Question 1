@@ -1,0 +1,23 @@
+1. Accept an integer as a string, convert it into an integer object using wrapper class. Display the original string, wrapper obj and primitive value :
+
+import java.util.Scanner;
+public class StringToInteger {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print ("Enter a number: ");
+        String str = sc.nextLine();
+
+        Integer obj = Integer.valueOf(str);
+        int num = obj.intValue();
+
+        System.out.println ("Original string: " + str);
+        System.out.println ("Wrapper object: " + obj);
+        System.out.println ("Primitive value: " + num);
+        sc.close();
+    }
+}
+
+Output:
+Original string : 25
+Wrapper object : 25
+Primitive value : 25
