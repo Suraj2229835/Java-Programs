@@ -1,0 +1,32 @@
+Finding sum of numbers between given range using logical operators :
+
+import java.util.Scanner;
+public class sum_range {
+    public static void main(String [] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Enter starting no:");
+        int start = sc.nextInt();
+        
+        System.out.println("Enter ending no:");
+        int end = sc.nextInt();
+        
+        int sum = 0;
+
+        if (start <= end && start >= 0 && end >= 0) {
+            for (int i = start; i <= end; i++) {
+                sum = sum + i;
+            }
+            System.out.println("sum"+sum);
+        } else {
+            System.out.println("Invalid Range");
+        }
+        
+        sc.close();
+    }
+}
+
+Output : 
+Enter starting no : 1
+Enter ending no : 5
+sum : 15
