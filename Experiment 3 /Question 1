@@ -1,0 +1,19 @@
+WAP to check whether length of the string is even or odd :
+
+public class EvenOddLength {
+    public static void main (String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.print("Enter a string:");
+        String str = input.next();
+
+        if (str.length() % 2 == 0) {
+            System.out.println("Even length");
+        } else {
+            System.out.println("Odd length");
+        }
+    }
+}
+
+Output :
+Enter a string :- Suraj
+Odd length
