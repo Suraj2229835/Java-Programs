@@ -1,0 +1,70 @@
+5. Create a calculator that accepts two nos as strings and an operation, converts the strings into wrapper obj, and performs basic operations :
+
+import java.util.Scanner;
+public class Calculator {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print ("Enter first no: ");
+        String s1 = sc.nextLine();
+        System.out.print ("Enter second no: ");
+        String s2 = sc.nextLine();
+
+        Integer n1 = Integer.valueOf(s1);
+        Integer n2 = Integer.valueOf(s2);
+
+        System.out.print ("Enter operation (+,-,*,/): ");
+        char op = sc.next().charAt(0);
+
+        switch (op) {
+            case '+':
+                System.out.println ("Result = " + (n1 + n2));
+                break;
+            case '-':
+                System.out.println ("Result = " + (n1 - n2));
+                break;
+            case '*':
+                System.out.println ("Result = " + (n1 * n2));
+                break;
+            case '/':
+                if (n2 != 0) {
+                    System.out.println ("Result = " + (n1 / n2));
+                } else {
+                    System.out.println ("Division by zero is not possible.");
+                }
+                break;
+            default:
+                System.out.println ("Invalid operation.");
+        }
+        sc.close();
+    }
+}
+
+Output :
+Enter first no = 10
+Enter second no = 5
+Enter operation (+,-,*,/) = +
+Result = 15
+
+Subtraction :-
+Enter first no = 10
+Enter second no = 5
+Enter operation = -
+Result = 5
+
+Multiplication :-
+Enter first no = 10
+Enter second no = 5
+Enter operation = *
+Result = 50
+
+Division :-
+Enter first no = 10
+Enter second no = 5
+Enter operation = /
+Result = 2
+
+Division by zero :-
+Enter first no = 10
+Enter second no = 0
+Enter operation = /
+Division by zero is not possible.
