@@ -1,0 +1,24 @@
+WAP to check the password entered by the user with a predefined password using string comparison :
+
+import java.util.Scanner;
+class Passwordcheck {
+    public static void main (String args[]) {
+        Scanner sc = new Scanner (System.in);
+        String password = "admin123";
+        System.out.print("Enter password.:");
+        String user_password = sc.nextLine();
+
+        if (user_password.equals(password)) {
+            System.out.println("Password is correct");
+        } else {
+            System.out.println("Incorrect Password");
+        }
+        sc.close();
+    }
+}
+
+Output:
+Enter password : admin123
+Password is correct
+Enter password : Hello123
+Incorrect password
