@@ -1,0 +1,36 @@
+4. Accept three no. convert them into integer objects and find the largest numbers :
+
+import java.util.Scanner;
+public class LargestNumber {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print ("Enter first no: ");
+        String s1 = sc.nextLine();
+        System.out.print ("Enter second no: ");
+        String s2 = sc.nextLine();
+        System.out.print ("Enter third no: ");
+        String s3 = sc.nextLine();
+
+        Integer n1 = Integer.valueOf(s1);
+        Integer n2 = Integer.valueOf(s2);
+        Integer n3 = Integer.valueOf(s3);
+
+        int largest = n1;
+
+        if (n2 > largest) {
+            largest = n2;
+        }
+        if (n3 > largest) {
+            largest = n3;
+        }
+
+        System.out.println ("Largest no = " + largest);
+        sc.close();
+    }
+}
+
+Output:
+Enter first number = 45
+Enter second number = 92
+Enter third number = 68
+Largest no = 92
