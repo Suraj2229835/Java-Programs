@@ -1,0 +1,25 @@
+3. Accept a no. as a string, convert it into integer object and determine whether it is even or odd :
+
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print ("Enter a no: ");
+        String str = sc.nextLine();
+
+        Integer num = Integer.valueOf(str);
+
+        if (num % 2 == 0) {
+            System.out.println (num + " is even.");
+        } else {
+            System.out.println (num + " is odd.");
+        }
+        sc.close();
+    }
+}
+
+Output:
+Enter a no : 18
+18 is even.
+Enter a no : 7
+7 is odd.
