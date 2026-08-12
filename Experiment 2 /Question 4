@@ -1,0 +1,33 @@
+Create class Area with three constructors to calculate the area f rectangle , sqaure & circle :
+
+public class Area {
+    int l, b, r;
+    int side;
+
+    Area () {
+        l = 2;
+        b = 3;
+        System.out.println("Area of rectangle="+ (l * b));
+    }
+
+    Area (int r) {
+        this.r = r;
+        System.out.println("Area of circle: "+ (3.14 * r));
+    }
+
+    Area (Area side) {
+        this.side = side.side;
+        System.out.println("Area of square: "+ (this.side * this.side));
+    }
+
+    public static void main (String args[]) {
+        Area rectangle = new Area ();
+        Area square = new Area (rectangle);
+        Area circle = new Area ();
+    }
+}
+
+Output:
+Area of rectangle: 6
+Area of circle: 12.56
+Area of square: 4
