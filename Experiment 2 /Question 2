@@ -1,0 +1,50 @@
+Write a program to find area for differet shapes :
+
+public class Area {
+    double radius;
+    int length, breadth;
+    int side;
+    
+    // circle
+    Area () {
+        radius = 7;
+    }
+    
+    // rectangle
+    Area (int l, int b) {
+        length = l;
+        breadth = b;
+    }
+    
+    // square
+    Area (Area obj) {
+        side = obj.length;
+    }
+
+    void area_circle () {
+        System.out.println("Area of circle ="+ 3.14 * radius * radius);
+    }
+    
+    void area_rectangle () {
+        System.out.println("Area of rectangle="+length * breadth);
+    }
+    
+    void area_square () {
+        System.out.println("Area of square"+ side * side);
+    }
+
+    public static void main (String [] args) {
+        Area c = new Area ();
+        Area r = new Area (5, 4);
+        Area s = new Area (r);
+
+        c.area_circle ();
+        r.area_rectangle ();
+        s.area_square ();
+    }
+}
+
+Output:
+Area of circle: 153.96
+Area of rectangle: 20
+Area of square: 25
