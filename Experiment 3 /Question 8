@@ -1,0 +1,20 @@
+WAP to count the total number of characters in a given string :
+
+import java.util.Scanner;
+class count_characters {
+    public static void main (String args[]) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a string.:");
+        String str = sc.nextLine();
+
+        int total = str.length();
+
+        System.out.println("Total character = "+total);
+
+        sc.close();
+    }
+}
+
+Output:
+Enter string : Suraj
+Total characters : 5
