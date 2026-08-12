@@ -1,0 +1,44 @@
+Write a program to volume of cube :
+
+class cube {
+    int length, breadth, height;
+
+    cube () {
+        length = 2;
+        breadth = 2;
+        height = 2;
+    }
+
+    cube (int l, int b, int h) {
+        length = l;
+        breadth = b;
+        height = h;
+    }
+
+    cube (cube c) {
+        length = c.length;
+        breadth = c.breadth;
+        height = c.height;
+    }
+
+    void volume () {
+        System.out.println("Volume ="+(length * breadth * height));
+    }
+}
+
+public class cube_demo {
+    public static void main (String args[]) {
+        cube c1 = new cube ();
+        cube c2 = new cube (4, 5, 6);
+        cube c3 = new cube (2);
+
+        c1.volume ();
+        c2.volume ();
+        c3.volume ();
+    }
+}
+
+Output:
+Volume = 8
+Volume = 120
+Volume = 120
